@@ -1,9 +1,15 @@
 # Supplier Optimization
-The Supplier Optimization project aims to minimize production costs for certain goods at Example Company. During the production process, an essential product P is used, which can be supplied by two partners: supplier A and supplier B. Historical price data for product P from both suppliers (averaged monthly) is available for the period from February 2018 to March 2020.
+The Supplier Optimization project is aimed at minimizing production costs for Example Company. In the production process, an essential product P is required, which can be obtained from two different suppliers - supplier A and supplier B. To make an informed decision on supplier selection, the project consultants have gathered historical price data for product P from both suppliers A and B. The data covers monthly averages from February 2018 to March 2020.
 
-In order to prepare the company budget for the next twelve months, the plan is to purchase a consistent amount of product P monthly. While analyzing the historical data, it was observed that there were periods when it would have been more profitable to use supplier A (due to lower prices), and other periods when supplier B would have been more favorable. The budget model allows setting a percentage of goods to be purchased from supplier A (e.g., 60%) and the remaining portion from supplier B (e.g., 40%). This split remains consistent throughout the entire twelve-month period. The budget will be used in the upcoming contract negotiations with both suppliers.
+The objective of the project is to prepare the Company Budget for the upcoming twelve-month period by purchasing a consistent monthly quantity of product P. The goal is to determine the optimal supplier mix for maximum cost savings. Upon analyzing the historical price data, it was observed that there were periods in the past when it would have been more profitable to source from supplier A due to lower prices, while in other periods, supplier B offered better pricing.
 
-The goal is to determine whether a particular percentage allocation between Company A and Company B will be more profitable based on historical prices or if it is feasible to work exclusively with one supplier.
+For the Budget model, you can set a percentage of the product to be purchased from supplier A (e.g., 60%) and the remaining portion from supplier B (e.g., 40%). It is important to maintain this split consistently throughout the entire twelve-month period. The resulting budget will be utilized in contract negotiations with both suppliers.
+
+The project aims to answer the following questions based on the historical price data:
+
+Is there a specific percentage that would be more profitable to source from supplier A, with the remaining portion from supplier B?
+Alternatively, does supplier selection not significantly impact profitability, allowing the company to work exclusively with one supplier?
+By optimizing the supplier selection based on historical price trends, Example Company can strategically reduce production costs and improve overall profitability.
 
 # Mathematical Statement of the Problem
 Let 𝑝𝐴 (USD) and 𝑝𝐵 (USD) denote the prices of product P from Company A and Company B, respectively. The volume of the product to be supplied per month is denoted as 𝑛 (units). The total cost in USD is given by the function 𝑓(𝜔) = 𝑝𝐴𝜔 + 𝑝𝐵(1−𝜔), where 0 ≤ 𝜔 ≤ 1 is a parameter. Since 𝑛 remains constant over the next twelve months, we can set 𝑛 = 1. Thus, the simplified total cost becomes 𝑓(𝜔) = 𝑝𝐴𝜔 + 𝑝𝐵.
