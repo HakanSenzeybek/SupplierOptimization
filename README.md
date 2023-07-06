@@ -14,3 +14,9 @@ The historical prices {𝑝1𝐴, ⋯, 𝑝𝑘𝐴} and {𝑝1𝐵, ⋯, 𝑝�
 The Supplier Optimization problem can be approached as a standard portfolio management (investment) problem in statistics, where historical prices are used to make investment decisions that aim to maximize profit (minimize costs). The approach involves calculating 𝑓(𝜔) for each historical price 𝑝𝑖𝐴 and 𝑝𝑖𝐵, where 𝑓𝑖(𝜔) = 𝑝𝑖𝐴𝜔 + 𝑝𝑖𝐵(1−𝜔). By taking the average of these values, 𝑓(v) = mean(𝑓𝑖(𝜔)) = 1/𝑘 ∑(𝑘𝑖=1) 𝑓𝑖(𝜔), we aim to minimize the variance 𝑉(𝜔) = 1/𝑘 ∑(𝑘𝑖=1) (𝑓𝑖(𝜔)−𝑓(v))². This variance 𝑉(𝜔) serves as the objective function to optimize, with 𝜔∈[0,1]. While the reason behind choosing this specific function may not be fully understood, it aligns with risk management theory. 
 
 Statistical theory demonstrates that there exists an 𝜔∈[0,1] that minimizes the variance 𝑉(𝜔) based on the properties of the datasets {𝑝1𝐴,⋯,𝑝𝑘𝐴} and {𝑝1𝐵,⋯,𝑝𝑘𝐵}. In order to find this optimal point, we will upload a dataset and explore the process of identifying the minimum point for the function 𝑉(𝜔).
+
+# Result
+
+This result means that, based on the historical data,  𝜔=0.702 is expected to be the most profitable choice for the share between suppliers A and B. It is reasonable to plan  70.2% of product P to be supplied from Company A, and  29.8% from Company B.
+
+If you would like to improve the accuracy, you just need to increase the number of points N. This is a very simple example of a model with one parameter, resulting in optimization of a function of one variable. It is computationally cheap to evaluate it in many points to find the minimum with certain accuracy. But in machine learning the models have hundreds of parameters, using similar approach you would need to perform millions of target function evaluations.
