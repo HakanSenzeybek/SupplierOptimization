@@ -8,7 +8,9 @@ For the Budget model, you can set a percentage of the product to be purchased fr
 The project aims to answer the following questions based on the historical price data:
 
 Is there a specific percentage that would be more profitable to source from supplier A, with the remaining portion from supplier B?
+
 Alternatively, does supplier selection not significantly impact profitability, allowing the company to work exclusively with one supplier?
+
 By optimizing the supplier selection based on historical price trends, Example Company can strategically reduce production costs and improve overall profitability.
 
 # Mathematical Statement of the Problem
