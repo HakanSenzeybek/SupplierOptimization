@@ -17,6 +17,8 @@ Statistical theory demonstrates that there exists an 𝜔∈[0,1] that minimizes
 
 # Result
 
-This result means that, based on the historical data,  𝜔=0.702 is expected to be the most profitable choice for the share between suppliers A and B. It is reasonable to plan  70.2% of product P to be supplied from Company A, and  29.8% from Company B.
+In this specific example, based on the historical data, the analysis suggests that 𝜔=0.702 is expected to be the most profitable choice for the share between suppliers A and B. This means that planning to source approximately 70.2% of product P from Company A and 29.8% from Company B is likely to minimize costs.
 
-If you would like to improve the accuracy, you just need to increase the number of points N. This is a very simple example of a model with one parameter, resulting in optimization of a function of one variable. It is computationally cheap to evaluate it in many points to find the minimum with certain accuracy. But in machine learning the models have hundreds of parameters, using similar approach you would need to perform millions of target function evaluations.
+Note that this is a simplified example with only one parameter, resulting in optimization of a function of one variable. In more complex scenarios, such as machine learning models with hundreds of parameters, optimizing the objective function becomes computationally expensive. However, for this Supplier Optimization problem, it is computationally feasible to evaluate the function in multiple points to find the minimum with a desired level of accuracy.
+
+Feel free to adjust the number of historical data points (N) to improve the accuracy of the optimization.
